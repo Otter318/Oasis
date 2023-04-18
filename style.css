@@ -1,0 +1,199 @@
+/* Default styles */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+main {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Language select and theme slider */
+
+#language-select, #theme-slider {
+    display: inline-block;
+}
+
+#language-select label, #theme-slider label {
+    color
+    : #fff;
+    margin-right: 10px;
+}
+    
+#language-select select {
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+    
+#theme-slider input[type="range"] {
+    width: 100px;
+}
+    
+#theme-slider label {
+    margin-right: 10px;
+}
+    
+    /* Light theme */
+    
+body[data-theme="light"] {
+    background-color: #f5f5f5;
+    color: #333;
+}
+    
+header[data-theme="light"] {
+    background-color: #f5f5f5;
+}
+    
+nav a[data-theme="light"] {
+    color: #333;
+}
+    
+#language-select label[data-theme="light"], #theme-slider label[data-theme="light"] {
+    color: #333;
+}
+    
+    /* Dark theme */
+    
+body[data-theme="dark"] {
+    background-color: #333;
+    color: #fff;
+}
+    
+header[data-theme="dark"] {
+    background-color: #333;
+}
+    
+nav a[data-theme="dark"] {
+    color: #fff;
+}
+    
+#language-select label[data-theme="dark"], #theme-slider label[data-theme="dark"] {
+    color: #fff;
+}
+    
+    /* Responsive styles */
+    
+@media (max-width: 768px) {
+header {
+    flex-direction: column;
+    text-align: center;
+}
+nav li {
+    display: block;
+    margin: 10px 0;
+}
+}
+
+/* Additional styles for specific pages */
+
+/* About page */
+
+.about-image {
+    float: left;
+    margin-right: 20px;
+}
+    
+    /* Services page */
+    
+.service {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+    
+.service h2 {
+    margin-top: 0;
+}
+    
+.service p:last-child {
+    margin-bottom: 0;
+}
+    
+    /* Contact page */
+    
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+    
+.contact-form label, .contact-form input, .contact-form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+}
+    
+.contact-form label {
+    font-weight: bold;
+    font-size: 16px;
+}
+    
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+    
+.contact-form textarea {
+    height: 150px;
+}
+    
+.contact-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+    
+.contact-form input[type="submit"]:hover {
+    background-color: #555;
+}    
